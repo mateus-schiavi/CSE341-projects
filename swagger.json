@@ -113,23 +113,36 @@
           {
             "name": "body",
             "in": "body",
+            "required": true,
             "schema": {
               "type": "object",
+              "required": [
+                "firstName",
+                "lastName",
+                "email",
+                "favoriteColor",
+                "birthday"
+              ],
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Jane"
                 },
                 "lastName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Smith"
                 },
                 "email": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "janesmith@example.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "green"
                 },
                 "birthday": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "1992-05-10"
                 }
               }
             }
