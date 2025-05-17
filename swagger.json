@@ -5,9 +5,10 @@
     "description": "Users Api",
     "version": "1.0.0"
   },
-  "host": "cse341-projects-hjsf.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -113,36 +114,23 @@
           {
             "name": "body",
             "in": "body",
-            "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "firstName",
-                "lastName",
-                "email",
-                "favoriteColor",
-                "birthday"
-              ],
               "properties": {
                 "firstName": {
-                  "type": "string",
-                  "example": "Jane"
+                  "example": "any"
                 },
                 "lastName": {
-                  "type": "string",
-                  "example": "Smith"
+                  "example": "any"
                 },
                 "email": {
-                  "type": "string",
-                  "example": "janesmith@example.com"
+                  "example": "any"
                 },
                 "favoriteColor": {
-                  "type": "string",
-                  "example": "green"
+                  "example": "any"
                 },
                 "birthday": {
-                  "type": "string",
-                  "example": "1992-05-10"
+                  "example": "any"
                 }
               }
             }
