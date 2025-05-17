@@ -7,3 +7,37 @@ Content-Type: application/json
 ### Get a single contact by ID
 GET http://localhost:3000/users/681e6a8dc40272c15035c0ad
 Content-Type: application/json
+
+###
+
+### Create a new contact
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
+
+###
+
+### Update a contact by ID
+PUT http://localhost:3000/users/6827dded6ebf57ee85ae1d85
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "janesmith@example.com",
+  "favoriteColor": "green",
+  "birthday": "1992-05-10"
+}
+
+###
+
+### Delete a contact by ID
+DELETE http://localhost:3000/users/6827de54226a7a779e62ebae
+Content-Type: application/json
